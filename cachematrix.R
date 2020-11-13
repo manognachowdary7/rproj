@@ -32,3 +32,14 @@ cachesolve <- function(x, ...) {
         x$setinv(inverse)
         inverse
 }
+
+##C <- makeCacheMatrix()
+
+## set the matrix value
+C$set(matrix(data = (1,2,5,6), nrow = 2, ncol = 2))
+
+## Check that we stored it correctly
+C$get()
+# [,1] [,2]
+# [1,]    1    5
+# [2,]    2    6
